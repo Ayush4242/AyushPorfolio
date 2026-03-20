@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f43f5e;
+  --color-secondary: #f97316;
+  --color-accent: #fbbf24;
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --background: 255 255 255;
+  --foreground: 30 30 30;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(0, 0, 0, 0.1);
+  color-scheme: light dark;
+}
+
+.dark {
+  --background: 14 14 14;
+  --foreground: 255 255 255;
+  --card-bg: rgba(20, 20, 20, 0.7);
+  --card-border: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-sans);
+  transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #f43f5e, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Cursor styles removed */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 63, 94, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f43f5e;
+}
