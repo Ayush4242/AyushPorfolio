@@ -34,7 +34,7 @@ const projects = [
     solution: "Created a real-time log monitoring system with role-based access, automated alerts, and analytics dashboards.",
     learnings: "Learned how to efficiently parse and analyze large log files and implement real-time alerts.",
     github: "https://github.com/Ayush4242/PHPproject",
-    demo: "#",
+    demo: "https://www.linkedin.com/feed/update/urn:li:activity:7320122641544069122/",
     icon: <ShieldCheck className="text-white w-6 h-6" />
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     solution: "Developed a secure platform using Java Swing and C++ with risk classification and account monitoring.",
     learnings: "Deepened understanding of security protocols, risk algorithms, and desktop application development.",
     github: "https://github.com/Ayush4242/Bank-Fraud-Detection-System",
-    demo: "#",
+    demo: "https://www.youtube.com/watch?v=8WCA-HhsOk4",
     icon: <ShieldCheck className="text-white w-6 h-6" />
   }
 ];
