@@ -66,12 +66,10 @@ const Achievements = () => {
               
               <div className="w-full grid xl:grid-cols-3 lg:grid-cols-2 gap-8 items-center">
                 {/* GitHub Stats */}
-                <div className="w-full flex justify-center bg-black/40 backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-[0_0_30px_rgba(244,63,94,0.1)] hover:shadow-[0_0_40px_rgba(249,115,22,0.2)] hover:border-primary/50 transition-all duration-500 h-full items-center">
-                  <img 
-                    src="https://github-readme-stats.vercel.app/api?username=Ayush4242&show_icons=true&theme=transparent&hide_border=true&title_color=f43f5e&text_color=e2e8f0&icon_color=f97316&bg_color=00000000&hide=stars,issues,prs&hide_rank=true" 
-                    alt="Ayush's GitHub Stats" 
-                    className="w-full max-w-[450px] object-contain drop-shadow-2xl transition-transform hover:scale-105 duration-500"
-                  />
+                <div className="w-full flex flex-col justify-center bg-black/40 backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-[0_0_30px_rgba(244,63,94,0.1)] hover:shadow-[0_0_40px_rgba(249,115,22,0.2)] hover:border-primary/50 transition-all duration-500 h-full items-center text-center">
+                  <p className="text-xs uppercase tracking-[0.18em] text-foreground/60 mb-2">GitHub Momentum</p>
+                  <h4 className="text-2xl md:text-3xl font-extrabold gradient-text mb-2">150+ Commits Since 2025</h4>
+                  <p className="text-sm text-foreground/70">Consistently building, shipping, and improving projects.</p>
                 </div>
                 
                 {/* GitHub Streak */}
@@ -86,7 +84,7 @@ const Achievements = () => {
                 {/* GitHub Top Languages */}
                 <div className="w-full flex justify-center bg-black/40 backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-[0_0_30px_rgba(244,63,94,0.1)] hover:shadow-[0_0_40px_rgba(249,115,22,0.2)] hover:border-primary/50 transition-all duration-500 h-full items-center xl:col-span-1 lg:col-span-2">
                   <img 
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush4242&layout=compact&theme=transparent&hide_border=true&title_color=f43f5e&text_color=e2e8f0&bg_color=00000000" 
+                    src="/top-languages.png" 
                     alt="Ayush's Top Languages" 
                     className="w-full max-w-[450px] object-contain drop-shadow-2xl transition-transform hover:scale-105 duration-500"
                   />
